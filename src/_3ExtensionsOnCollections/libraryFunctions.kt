@@ -1,16 +1,20 @@
 package _3ExtensionsOnCollections
 
+// Подробные комментарии про синтаксис лямбд и семантику функций будут в домашнем задании.
+
+// Пока важно понимать, что все эти функции (filter, map, all, groupBy etc.) объявлены как extension-функции на коллекциях.
+// Можно снавигироваться по ним и посмотреть.
+
 data class Person(val name: String, val age: Int)
 
 fun example(people: List<Person>) {
     people.filter { person -> person.age >= 21 }
     people.filter { it.age >= 21 }.map { it.name }
-    people.filter { it.age >= 21 }.map(Person::name)
 }
 
 fun main(args: Array<String>) {
     val people = listOf(Person("Alice", 20), Person("Bob", 30))
-    println(people.filter { it.age >= 21 })
+    println(people.asSequence().filter { it.age >= 21 })
 
     println(people.maxBy { it.age })
 
@@ -26,4 +30,6 @@ fun main(args: Array<String>) {
     println(strings.flatMap { it.toList() })
 
     println("abca".count { it == 'a'})
+
+    val positions = "AACF".zip("ABCD").count { it.first == it.second } //2
 }
