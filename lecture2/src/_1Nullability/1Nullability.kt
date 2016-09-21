@@ -42,5 +42,11 @@ fun test3(s: String?) {
     val i: Int = s?.length ?: fail()
 }
 
+// В Котлине можно объявить функцию, которая может завершиться только аварийный образом: кинуть исключение.
+// Её тип Nothing нужно явно указать (про Nothing и иерархию типов мы поговорим потом).
 fun fail(): Nothing =
   throw UnsupportedOperationException()
+
+// В библиотеке, например, есть функция TODO,
+// которая возвращает Nothing
+fun notImplemented() { TODO() }
