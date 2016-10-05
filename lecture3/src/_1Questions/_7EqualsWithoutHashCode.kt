@@ -10,5 +10,5 @@ class Value(val i: Int) {
 
 fun main(args: Array<String>) {
     val set = hashSetOf(Value(1))
-    println(set.contains(Value(1)))
+    println(set.contains(Value(1))) // false
 }

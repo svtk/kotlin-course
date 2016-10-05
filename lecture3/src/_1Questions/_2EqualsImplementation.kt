@@ -5,7 +5,7 @@ fun eq1(s1: String?, s2: String?): Boolean {
 }
 
 fun eq2(s1: String?, s2: String?): Boolean =
-        if (s1 == null) s2 === null else s1.equals(s2)
+        if (s1 === null) s2 === null else s1.equals(s2)
 
 fun eq3(s1: String?, s2: String?): Boolean =
         s1?.equals(s2) ?: (s2 === null)
