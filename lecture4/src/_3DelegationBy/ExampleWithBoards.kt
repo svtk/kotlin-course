@@ -48,7 +48,9 @@ class SquareBoardImpl(override val width: Int) : SquareBoard {
     override fun Cell.getNeighbour(direction: Direction): Cell = TODO()
 }
 
-class GameBoardImpl<T>(squareBoardImpl: SquareBoardImpl) : GameBoard<T>, SquareBoard by squareBoardImpl {
+class GameBoardImpl<T>(
+        val squareBoardImpl: SquareBoardImpl
+) : GameBoard<T>, SquareBoard by squareBoardImpl {
 
     override fun get(cell: Cell): T = TODO()
     override fun set(cell: Cell, value: T?) = TODO()

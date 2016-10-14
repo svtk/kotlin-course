@@ -6,6 +6,7 @@ class Type
 
 class Delegate {
     operator fun getValue(thisRef: Foo, property: KProperty<*>): Type = TODO()
+
     operator fun setValue(thisRef: Foo, property: KProperty<*>, value: Type) { TODO() }
 }
 
@@ -15,9 +16,9 @@ class Foo {
 
 /*
 class Foo {
-    private val delegate = Delegate()
+    private val p$delegate = Delegate()
     var p: Type
-        set(value: Type) = delegate.setValue(..., value)
-        get() = delegate.getValue(...)
+        set(value: Type) = p$delegate.setValue(..., value)
+        get() = p$delegate.getValue(...)
 }
 */

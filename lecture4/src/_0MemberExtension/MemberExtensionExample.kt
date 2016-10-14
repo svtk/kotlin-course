@@ -23,9 +23,14 @@ interface SquareBoard {
 
 abstract class SquareBoardImpl: SquareBoard {
     override fun Cell.getNeighbour(direction: Direction): Cell? {
+
+        // можно обратиться к instance объекту outer класса:
         this@SquareBoardImpl
+
+        // можно обратиться к receiver объекту extension функции:
         this@getNeighbour
-        this
+        this  // просто this ссылается на ближайший labeled this
+
         return when (direction) {
             UP -> getCellOrNull(i - 1, j)
             DOWN -> getCellOrNull(i + 1, j)
@@ -36,8 +41,8 @@ abstract class SquareBoardImpl: SquareBoard {
 }
 
 fun useBoard(board: SquareBoard) {
-    with (board) {
-        val cell = this.getCell(1, 1)
+    with(board) {
+        val cell = this.getCell(1, 1) // this можно опустить
         cell.getNeighbour(UP)
     }
 }
