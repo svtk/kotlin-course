@@ -1,4 +1,4 @@
-package _5MoreAboutOperationsOnCollections
+package _4MoreInlineFunctions
 
 import java.util.concurrent.locks.Lock
 import java.util.concurrent.locks.ReentrantLock
@@ -20,6 +20,7 @@ fun main(args: Array<String>) {
     synchronized(l) {
         // ...
     }
+
     l.withLock {
         // ...
     }
