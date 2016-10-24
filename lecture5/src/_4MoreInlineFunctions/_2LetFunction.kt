@@ -5,17 +5,14 @@ fun sendEmailTo(email: String) { /*...*/ }
 fun example(email: String?) {
 
     if (email != null) sendEmailTo(email)
+    email?.let { e -> sendEmailTo(e) }
 
-    email?.let { sendEmailTo(it) }
+    val e = getEmail()
+    if (e != null) sendEmailTo(e)
+
+    getEmail()?.let { sendEmailTo(it) }
 }
 
-data class Person(val email: String)
+inline fun <T, R> T.let(block: (T) -> R): R = block(this)
 
-fun getTheBestPersonInTheWorld(): Person? = null
-
-fun example2() {
-    val person: Person? = getTheBestPersonInTheWorld()
-    if (person != null) sendEmailTo(person.email)
-
-    getTheBestPersonInTheWorld()?.let { sendEmailTo(it.email) }
-}
+fun getEmail(): String? = null

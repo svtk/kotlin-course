@@ -8,11 +8,9 @@ fun main(args: Array<String>) {
     foo(list2)
 }
 
-fun <T> foo(list: List<T>) {
+fun <T> foo(list: Collection<T>) {
     // generics are erased
-/*
-    if (list is List<String>) {
-    }
-*/
+//    if (list is List<String>) {
+//    }
     if (list is List<*>) {}
 }

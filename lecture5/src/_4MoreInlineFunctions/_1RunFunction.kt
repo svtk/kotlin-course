@@ -24,6 +24,8 @@ class Board(val width: Int) {
     }
 }
 
+inline fun <T, R> T.run(block: T.() -> R): R = block()
+
 fun main(args: Array<String>) {
     val table = Board(3)
     for ((i, j) in table.indices) {

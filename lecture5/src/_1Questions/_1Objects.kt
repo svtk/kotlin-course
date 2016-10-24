@@ -8,7 +8,8 @@ class A {
         fun b() = this@A.foo()
     }
 
-/*    class C {
+/*
+    class C {
         fun c() = this@A.foo()
     }
 
@@ -18,5 +19,6 @@ class A {
 
     object E {
         fun e() = this@A.foo()
-    }*/
+    }
+*/
 }

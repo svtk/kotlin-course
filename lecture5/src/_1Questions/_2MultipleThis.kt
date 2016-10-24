@@ -6,5 +6,6 @@ class A {
     class B
     inner class C {
 //        fun B.foo() = listOf(this@A, this@B, this@C)
+        fun B.foo() = listOf(this@A, this, this@C)
     }
 }
