@@ -1,4 +1,4 @@
-package _3Object
+package _1Object
 
 fun main(args: Array<String>) {
     // java

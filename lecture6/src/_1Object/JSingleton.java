@@ -1,4 +1,4 @@
-package _3Object;
+package _1Object;
 
 public class JSingleton {
     public final static JSingleton INSTANCE;

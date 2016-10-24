@@ -1,4 +1,4 @@
-package _5ReifiedGenerics
+package _2Reified
 
 fun main(args: Array<String>) {
     val strings = listOf(1, "one", 2.0).filterIsInstance<String>()
