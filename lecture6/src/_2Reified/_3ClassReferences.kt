@@ -10,5 +10,6 @@ inline fun <reified T: Any> loadService() =
 fun main(args: Array<String>) {
 
     ServiceLoader.load(Service::class.java)
+
     loadService<Service>()
 }

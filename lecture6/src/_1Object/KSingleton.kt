@@ -2,8 +2,8 @@ package _1Object
 
 object KSingleton {
     init {
-        println("Instance of KSingleton created")
+        println("Constructor")
     }
 
-    fun foo() = println("Foo called")
+    fun foo() = println("Foo")
 }
