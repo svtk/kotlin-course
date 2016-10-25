@@ -2,7 +2,7 @@ package reifiedGenerics
 
 import kotlin.reflect.KClass
 
-interface FieldValidator<in T> {
+interface FieldValidator<T> {
     fun validate(input: T): Boolean
 }
 
@@ -17,8 +17,6 @@ object Validators {
     @Suppress("UNCHECKED_CAST")
     operator fun <T : Any> get(kClass: KClass<T>): FieldValidator<T>? =
             validators[kClass] as FieldValidator<T>?
-
-    inline fun <reified T: Any> validate(t: T) = get(T::class)!!.validate(t)
 }
 
 
@@ -36,6 +34,4 @@ fun main(args: Array<String>) {
 
     println(Validators[String::class]?.validate("Kotlin"))
     println(Validators[Int::class]?.validate(42))
-
-    println(Validators.validate("Kotlin"))
 }
