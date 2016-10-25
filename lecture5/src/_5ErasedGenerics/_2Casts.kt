@@ -1,4 +1,4 @@
-package _5ReifiedGenerics
+package _5ErasedGenerics
 
 fun printSum(c: Collection<*>) {
     val intList = c as? List<Int>

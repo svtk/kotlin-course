@@ -1,4 +1,4 @@
-package _5ReifiedGenerics
+package _5ErasedGenerics
 
 val list1: List<String> = listOf("a", "b")
 val list2: List<Int> = listOf(1, 2, 3)
