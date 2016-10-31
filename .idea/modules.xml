@@ -9,6 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/lecture4/lecture4.iml" filepath="$PROJECT_DIR$/lecture4/lecture4.iml" />
       <module fileurl="file://$PROJECT_DIR$/lecture5/lecture5.iml" filepath="$PROJECT_DIR$/lecture5/lecture5.iml" />
       <module fileurl="file://$PROJECT_DIR$/lecture6/lecture6.iml" filepath="$PROJECT_DIR$/lecture6/lecture6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture7.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture7_main.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture7_main.iml" group="lecture7" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture7_test.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture7_test.iml" group="lecture7" />
     </modules>
   </component>
 </project>

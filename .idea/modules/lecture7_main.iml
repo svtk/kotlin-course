@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="lecture7:main" external.linked.project.path="$MODULE_DIR$/../../lecture7" external.root.project.path="$MODULE_DIR$/../../lecture7" external.system.id="GRADLE" external.system.module.group="lecture7" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../../lecture7/build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../lecture7/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../lecture7/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../lecture7/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../lecture7/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../lecture7/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx.html.jvm:0.5.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-runtime:1.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx.html.shared:0.5.11" level="project" />
+  </component>
+</module>
