@@ -1,11 +1,29 @@
 package _1LambdaWithReceiver
 
+fun String.lastChar() = get(length - 1)
+
 fun main(args: Array<String>) {
-    val s = buildString1 {
+    val stringBuilder = StringBuilder()
+
+    for (i in 1..9) {
+        stringBuilder.append(i)
+    }
+    stringBuilder.append('!')
+
+    with (stringBuilder) {
         for (i in 1..9) {
-            it.append(i)
+            append(i)
         }
-        it.append('!')
+        append('!')
+    }
+
+    val result = stringBuilder.toString()
+
+    val s = buildString2 {
+        for (i in 1..9) {
+            append(i)
+        }
+        append('!')
     }
     println(s)
 }

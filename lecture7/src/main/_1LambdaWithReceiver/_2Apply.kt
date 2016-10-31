@@ -8,5 +8,7 @@ fun buildString3(
     return sb.toString()
 }
 
-fun buildString4(builderAction: StringBuilder.() -> Unit): String =
+fun buildString4(
+        builderAction: StringBuilder.() -> Unit
+): String =
         StringBuilder().apply(builderAction).toString()

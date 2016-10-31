@@ -9,5 +9,16 @@ fun main(args: Array<String>) {
     map.run { this[4] = "four" }
     println(map)
 
-    // inline!
+}
+
+// the declarations copied from the standard library
+
+inline fun <T, R> with(receiver: T, block: T.() -> R): R =
+        receiver.block()
+
+inline fun <T, R> T.run(block: T.() -> R): R = block()
+
+inline fun <T> T.apply(block: T.() -> Unit): T {
+    this.block()
+    return this
 }
