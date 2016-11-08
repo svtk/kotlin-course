@@ -18,6 +18,7 @@ class BreakfastMenu {
 }
 
 fun breakfastMenu(init: BreakfastMenu.() -> Unit): BreakfastMenu {
+    // can be rewritten using 'apply' as well
     val breakfastMenu = BreakfastMenu()
     breakfastMenu.init()
     return breakfastMenu
