@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture8.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture8_main.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture8_main.iml" group="lecture8" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/lecture8_test.iml" filepath="$PROJECT_DIR$/.idea/modules/lecture8_test.iml" group="lecture8" />
+      <module fileurl="file://$PROJECT_DIR$/questions/questions.iml" filepath="$PROJECT_DIR$/questions/questions.iml" />
     </modules>
   </component>
 </project>
